@@ -4,8 +4,19 @@ from mongodb_utils import insert_job, find_job, find_fbid
 from datetime import datetime
 from facebook_utils import get_user_id
 import uuid
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # או http://localhost:3000 אם בא לך לאבטח
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/job", tags=["Jobs"])
 def create_job(username: str):

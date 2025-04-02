@@ -1,0 +1,94 @@
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fdfdfd;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.status-section, .result {
+  margin-top: 30px;
+}
+
+.result pre {
+  text-align: left;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
+}
+.job-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.job-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.job-table td:first-child {
+  font-weight: bold;
+  color: #555;
+  width: 30%;
+}
+.result {
+  font-size: 14px;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+}
+
+.status.ready {
+  background-color: #17a2b8;
+}
+
+.status.in_progress {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status.done {
+  background-color: #28a745;
+}
+
+.status.error {
+  background-color: #dc3545;
+}
